@@ -1,0 +1,49 @@
+
+
+@use '../util' as *;       // Main Font
+
+
+        :root {
+    --akaya: 'Akaya Telivigala', sans-serif; 
+    }
+ 
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;   //inherits the box sizing properties from the html
+}
+
+body {
+    padding: 0;
+    font-family: var(--akaya);
+    background: var(--orange2);
+}
+
+h1, h2, h3 {
+    margin-top:  0;
+    font-family: var(--akaya);
+}
+
+
+.container {
+    width: auto; 
+    
+    margin: 0 rem(64);
+
+
+     
+}
+ 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}

@@ -1,0 +1,41 @@
+
+@use '../util' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 rem(48);
+    height: rem(71);
+    margin-top: rem(39);
+    
+    & .logo {
+        font-size: rem(31.43);
+        cursor: pointer;
+
+    }
+    & .hidden {
+        visibility: hidden;
+    }
+
+
+    nav li {
+        display: inline;
+        padding-right: rem(96);
+        font-size: rem(24);
+        
+    }
+    & nav li a {
+        transition: transform 0.3s ease;
+        
+
+       
+    }
+    & nav li a:hover {
+        
+        transform: scale(1.25);
+        color: var(--orange1);
+    }
+}
+     
+
+ 

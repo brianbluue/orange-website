@@ -1,0 +1,83 @@
+@use '../util' as *;
+ 
+
+ 
+
+ .carousel {
+    position: relative;
+    
+
+
+  
+    
+    
+
+ 
+    & .page-orange,  .page-pineaple  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+         
+         
+    }
+    & .page-orange {
+        display: none;
+    }
+
+       & .can {
+        position: absolute;
+        top: 12%;
+        left: 42%;        
+        margin: auto;
+       }
+
+       
+       & .half-fruit {
+        left: 60%;
+        top: 10%;
+        position: absolute
+       }
+
+      &  .half-fruit2 {
+        top: 38%;
+        left: 23%;
+        position: absolute;
+       }
+      &  .leaf {
+        top: 10%;
+        left: 28%;
+        position: absolute;
+       }
+     
+    & .orange {
+        font-size: rem(335.66);
+        color: var(--orange1);
+        
+        
+    }
+    
+}
+
+.slide {
+    
+    position: absolute;
+    top: 80%;
+    height: rem(60.24);
+    width: rem(224.48);
+    border-radius: rem(36.77);
+    background: none;
+    border: rem(2.72) solid var(--text);
+    font-size: rem(27.24);
+    transition: 0.3s ease;
+    
+}
+
+.slide:hover {
+    transform: scale(1.25);
+}
+
+
+
+
+
