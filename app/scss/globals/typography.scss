@@ -18,9 +18,10 @@ html {
 }
 
 body {
-    padding: 0;
+     padding: 0;
+    margin: 0;
     font-family: var(--akaya);
-    background: var(--orange2);
+  
 }
 
 h1, h2, h3 {
@@ -32,7 +33,8 @@ h1, h2, h3 {
 .container {
     width: auto; 
     
-    margin: 0 rem(64);
+    
+     
 
 
      
