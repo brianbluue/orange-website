@@ -5,57 +5,113 @@
 
  .carousel {
     position: relative;
-    
-
-
-  
+    overflow: hidden;
     
     
+    & .page {
+        display: none;
+         /* Start with opacity set to 0 */
+        transition: 0.5s ease; 
 
- 
-    & .page-orange,  .page-pineaple  {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    }
+
+    & .page.active {
+        display: block;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+    .page.next {
+        transform: translateX(100%);
+    }
+
+
+    & .page-orange, .page-pineaple  {
+        
         height: 100vh;
         width: 100%;
+        z-index: -1;
+      
+        
+
+        
+        
+    }
+
+   & .page-pineaple {
+        background: var(--green1);
+        
+        
          
-         
+
+
     }
     & .page-orange {
-        display: none;
+        background: var(--orange2);
+        
+        
     }
+     
 
        & .can {
         position: absolute;
-        top: 12%;
-        left: 42%;        
+        top: 0;
+        left: 0;        
         margin: auto;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
        }
 
        
        & .half-fruit {
-        left: 60%;
-        top: 10%;
-        position: absolute
+        left: 58%;
+        top: 30%;
+        position: absolute;
+        z-index: 2;
        }
 
       &  .half-fruit2 {
-        top: 38%;
+        top: 45%;
         left: 23%;
         position: absolute;
+        z-index: 2;
        }
       &  .leaf {
-        top: 10%;
+        top: 17%;
         left: 28%;
         position: absolute;
        }
      
-    & .orange {
+    & .fruit-writing {
         font-size: rem(335.66);
+        position: absolute;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+             
+       
+        
+        
+        margin: auto;
+
+       &.orange {
+            color: var(--orange1);
+        }
+        &.pineapple {
+            color: var(--green2);
+        }
         
         
     
+    }
+    & .waves {
+        bottom: 0;
+        position: absolute;
+        z-index: 0;
     }
 
 
@@ -66,6 +122,10 @@
     
     position: absolute;
     top: 80%;
+    left: 0;        
+    margin: auto;
+    bottom: 0;
+    right: 0;
     height: rem(60.24);
     width: rem(224.48);
     border-radius: rem(36.77);
@@ -73,6 +133,7 @@
     border: rem(2.72) solid var(--text);
     font-size: rem(27.24);
     transition: 0.3s ease;
+    transition-delay: 0.1s;
     
 }
 

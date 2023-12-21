@@ -8,17 +8,4 @@
 }
 
 
-.green-session {
-    background: var(--green1);
-
-    & .orange {
-        color: var(--green2);
-    }
-}
-.orange-session {
-    background: var(--orange2);
-    
-    & .orange {
-        color: var(--orange1);
-    }
-}
+ 
