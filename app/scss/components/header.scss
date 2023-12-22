@@ -7,7 +7,7 @@
     z-index: 1000;
     position: fixed;
     width: 100%;
-    padding: 0 rem(112);
+    padding:0 rem(112);
    
     padding-top: rem(39);
     
@@ -28,8 +28,9 @@
         
     }
     & nav li a {
-        transition: 0.3s ease;
+        transition: 0.3s ease-in-out;
         transition-delay: 0.2s;
+
         
 
        
@@ -38,6 +39,7 @@
         
         transform:  scale(1.25);
         color: var(--orange1);
+        transition: 0.3s ease-in-out;
          
         
     }
