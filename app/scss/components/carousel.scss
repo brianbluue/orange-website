@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+ 
+    
     
     
     & .page {
@@ -19,7 +21,6 @@
 
     & .page.active {
         display: block;
-         
         transform: translateX(0);
     }
 
@@ -34,10 +35,6 @@
         height: 100vh;
         width: 100%;
         z-index: -1;
-      
-        
-
-        
         
     }
 
@@ -58,14 +55,10 @@
 
        & .can {
         position: absolute;
-        top: 0;
-        left: 0;        
-        margin: auto;
-        bottom: 0;
-        right: 0;
-        z-index: 2;
-        
-        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
         
        }
 
@@ -92,7 +85,7 @@
        }
      
     & .fruit-writing {
-        font-size: rem(335.66);
+        font-size: 23vw;
         position: absolute;
         text-align: center;
         position: absolute;
